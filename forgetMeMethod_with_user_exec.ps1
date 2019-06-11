@@ -300,7 +300,7 @@ $csharpCode = @"
 "@
     # Importing the source code as csharp
     $compilerParams = [System.CodeDom.Compiler.CompilerParameters]::new()
-    $compilerParams.ReferencedAssemblies.AddRange(('System', 'System.Runtime.InteropServices'))
+    $compilerParams.ReferencedAssemblies.AddRange(('System.Runtime.InteropServices.dll', 'System.dll'))
     $compilerParams.CompilerOptions = '/unsafe'
     $compilerParams.GenerateInMemory = $True
     Add-Type -TypeDefinition $csharpCode -Language CSharp -CompilerParameters $compilerParams
