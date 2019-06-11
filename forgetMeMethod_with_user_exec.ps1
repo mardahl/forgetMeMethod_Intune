@@ -338,7 +338,7 @@ whoami >> "$($env:TEMP)\forgetMeScript_whoami.txt"
     Write-Output "Ran the forgetMeMethod on $((get-date).DateTime)" >> "$($env:windir)\temp\forgetMeScript_log_proof.txt"
 
 } finally {
-    ### These are not the droids you are looking for...
+    ### These aren't the droids you're looking for...
 
     # starting the process that will remove this scripts policy from IME after it has run... (can't really do it while it's running!)
     # getting the name of the script file as it is run by IME
